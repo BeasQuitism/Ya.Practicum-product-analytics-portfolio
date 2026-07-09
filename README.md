@@ -2,10 +2,6 @@
 
 **Эльчин Исмаилов**
 
-📧 Email: Ismailow.elchin@yandex.ru  
-📱 Telegram: @BeasQuit  
-📍 Локация: Реутов (Москва)
-
 ---
 
 ## Обо мне
