@@ -65,43 +65,6 @@ S3 (входной CSV)
 (таблица-витрина)
 ```
 
-## Установка и запуск
-
-### 1. Клонирование
-
-```bash
-git clone https://github.com/<username>/airflow-bookmate-pipeline.git
-cd airflow-bookmate-pipeline
-```
-
-### 2. Конфигурация
-
-Заполните параметры подключения в файлах:
-
-- `jobs/my_spark_job.py` — хост, порт, БД и креды ClickHouse.
-- `dags/bookmate_dag.py` — `cluster_id`, путь к S3.
-
-### 3. Развёртывание DAG
-
-Скопируйте файл DAG в папку `dags/` вашего Airflow:
-
-```bash
-scp dags/bookmate_dag.py <airflow-host>:/path/to/dags/
-```
-
-### 4. Запуск
-
-Активируйте DAG в Airflow UI или через CLI:
-
-```bash
-airflow dags trigger audition_content_analysis
-```
-
-## Расписание
-
-DAG запускается ежедневно в **16:00 UTC** (`0 16 * * *`), начиная с `2025-01-01`.
-Пропущенные запуски не восстанавливаются (`catchup=False`).
-
 ## Результат
 
 В ClickHouse записывается агрегат по пользователям:
