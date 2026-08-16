@@ -7,11 +7,11 @@ import sys
 spark = SparkSession.builder.appName("myAggregateTest").config("fs.s3a.endpoint", "storage.yandexcloud.net").getOrCreate()
 
 # Указываем порт и параметры кластера ClickHouse
-jdbcPort = 8443
-jdbcHostname = "rc1a-3jouval14nne7aun.mdb.yandexcloud.net"
-jdbcDatabase = "playground_da_20260625_d1ffbc051e"
+jdbcPort = DATA_DELETED
+jdbcHostname = "DATA_DELETED"
+jdbcDatabase = "DATA_DELETED"
 jdbcUrl = f"jdbc:clickhouse://{jdbcHostname}:{jdbcPort}/{jdbcDatabase}?ssl=true"
-#jdbc:clickhouse://rc1a-3jouval14nne7aun.mdb.yandexcloud.net:8443/playground_da_20260625_d1ffbc051e
+
 
 # Получаем аргумент из Airflow
 my_date = sys.argv[1].replace('-', '_')
@@ -27,8 +27,8 @@ result_df = df.groupBy("puid").agg(
 
 result_df.write.format("jdbc") \
     .option("url", jdbcUrl) \
-    .option("user", "da_20260625_d1ffbc051e") \
-    .option("password", "0bc595e49f07448cae874fe6c316321e") \
-    .option("dbtable", "bookmate_user_aggregate") \
+    .option("user", "DATA_DELETED") \
+    .option("password", "DATA_DELETED") \
+    .option("dbtable", "DATA_DELETED") \
     .mode('append') \
     .save()
