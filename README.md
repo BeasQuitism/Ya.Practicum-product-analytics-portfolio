@@ -49,7 +49,7 @@
 
 📧 **Email:** Ismailow.elchin@yandex.ru  
 📱 **Telegram:** @BeasQuit  
-💼 **HH.ru:** [Моё резюме](https://hh.ru/resume/ea41f9daff10bfae230039ed1f696c7a597849)
+💼 **HH.ru:** [Моё резюме](https://hh.ru/resume/03f12128ff11029dc50039ed1f676c6a495071)
 
 ---
 
