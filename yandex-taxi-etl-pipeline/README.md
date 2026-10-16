@@ -16,4 +16,4 @@
 
 **Инструменты:** Apache Airflow, PySpark, Yandex Cloud Dataproc, S3, ClickHouse, Python, JDBC, Parquet.
 
-📁 **Файл:** `Дипломный проект.ipynb`
+📁 **Файл:** `ETL Pipeline.ipynb`
